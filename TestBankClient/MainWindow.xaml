@@ -1,0 +1,26 @@
+﻿<Window x:Class="TestBankClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestBankClient"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="1000">
+    <Grid>
+        <DataGrid Name="ClientInfoemationGrid" HorizontalAlignment="Left" Height="700" Margin="324,30,0,0" VerticalAlignment="Top" Width="562">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=FamilyName}" Header="Фамилия" Width="80" />
+                <DataGridTextColumn Binding="{Binding Path=FirstName}" Header="Имя" Width="80" />
+                <DataGridTextColumn Binding="{Binding Path=LastName}" Header="Отчество" Width="80" />
+                <DataGridTextColumn Binding="{Binding Path=Date}" Header="Дата рождения" Width="100" />
+                <DataGridTextColumn Binding="{Binding Path=ContactEmail}" Header="Email" Width="100" />
+                <DataGridTextColumn Binding="{Binding Path=NumberOfAccounts}" Header="Активные вклады" Width="120" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Name="ShowButton" Content="Вывести всех клиентов" HorizontalAlignment="Left" Margin="27,30,0,0" VerticalAlignment="Top" Width="150" Click="ShowButton_Click"/>
+        <Button Name="NewClientButton" Content="Новый клиент" HorizontalAlignment="Left" Margin="27,60,0,0" VerticalAlignment="Top" Width="150" Click="NewClientButton_Click"/>
+        <Button Name="SelectButton" Content="Выбрать клиента" HorizontalAlignment="Left" Margin="27,90,0,0" VerticalAlignment="Top" Width="150" Click="SelectButton_Click"/>
+        <Button Name="DBOptions" Content="Настройки" HorizontalAlignment="Left" Margin="27,126,0,0" VerticalAlignment="Top" Width="150" Click="DBOptions_Click"/>
+
+    </Grid>
+</Window>

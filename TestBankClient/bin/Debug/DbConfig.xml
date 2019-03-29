@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DbConnectionOptions>
+  <DataSource>DESKTOP-A2MLHK2\DEVSERVER</DataSource>
+  <InitialCatalog>BANK_DEMO</InitialCatalog>
+</DbConnectionOptions>
